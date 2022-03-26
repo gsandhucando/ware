@@ -1,0 +1,28 @@
+.partnerLogosMainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.partnerLogosContainer{
+    padding: 55px;
+    height: 300px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr; */
+    /* max-width: 1200px; */
+    display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.logoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+}

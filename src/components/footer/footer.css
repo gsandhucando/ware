@@ -1,0 +1,32 @@
+.footerContainer{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.footerTagContainer{
+    text-align: start;
+
+}
+.footerUl{
+    list-style: none;
+}
+.footerLi {
+    margin: 20px 0;
+    /* width: 92px; */
+    font-size: 17px;
+    cursor: pointer;
+    color: #222222;
+    text-align: start;
+}
+.footerLi:hover{
+    /* color: #157FFE; */
+    text-decoration: underline;
+}
+.footerHeader{
+    /* margin: 0 10px; */
+    /* width: 92px; */
+    font-size: 20px;
+    color: #222222;
+}
