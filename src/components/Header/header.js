@@ -3,6 +3,7 @@ import { Animated } from 'react-animated-css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './header.css';
 
+import useWindowSize from '../../helperFunctions/windowResize'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -63,7 +64,7 @@ function Header() {
             </p>
           </div>
         </div>
-        <div className="headerContainer" style={scrollTop > 90 ? { position: 'fixed', top: 0, zIndex: 8, width: '100%' } : null}>
+        <div className="headerContainer" style={scrollTop > 90 ? { position: 'fixed', top: 0, zIndex: 8, width: '100%',     boxShadow: '0px 1px 11px 1px rgb(0 0 0 / 30%)' } : null}>
           <div className='logoConatiner' style={size.width < 900 ? { justifyContent: 'start', padding: '0 10px' } : null}>
             <img src='images/wareLogo.png' />
           </div>
@@ -122,25 +123,6 @@ function Header() {
       </Animated>
     </>
   );
-}
-
-function useWindowSize() {
-  const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined,
-  });
-  useEffect(() => {
-    function handleResize() {
-      setWindowSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    }
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-  return windowSize;
 }
 
 export default Header;
