@@ -50,6 +50,6 @@
     "@faker-js/faker": "^6.0.0"
   },
   "engines": {
-    "node": "16.14.2"
+    "node": "16.x"
   }
 }
